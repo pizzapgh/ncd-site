@@ -175,23 +175,55 @@ input[type=text]{
 textarea{
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
   padding-bottom: 5em;
+}
+textarea:hover, input#name:hover{
+  border: none;
+  border-bottom: 2px solid white;
+}
+textarea:foxus, input#name:focus{
+  border: none;
+  box-shadow: none;
+}
+input, textarea{
+  color: #fff;
+}
+textarea{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.115rem;
 }
 input[type=submit]{
   display: block;
   border-radius: 0;
   width: 100%;
   background: #bd5758;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.75) !important;
-}
-input[type=submit]hover{
-  color: red;
+
 }
 input[type=submit]:first-child{
-  background: white;
-  color: #555769;;
+  font-size: 1.2rem;
+    background: white;
+    color: #555769;
 }
+input[type=submit]:last-child{
+    font-size: 1.2rem;
+    background: #bd5758;
+}
+
+input[type=submit]:hover:first-child{
+    background: white;
+    outline: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35) !important;
+        transition-timing-function: ease-in-out;
+        transition: 0.7s;
+}
+input[type=submit]:hover:last-child{
+    background: #bd5758;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35) !important;
+        transition-timing-function: ease-in-out;
+        transition: 0.7s;
+}
+
 form{
   width: 100%;
 }
@@ -236,7 +268,7 @@ input::placeholder{
 textarea::placeholder{
   color: $accent-color;
   font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 textarea#comments{
@@ -265,7 +297,7 @@ footer a:hover{
     text-decoration: none;
 }
 .footer{
-  justify-content: space-between;
+  justify-content: center;
 }
 .logo img:first-child{
   width: 240px;
@@ -293,6 +325,14 @@ footer a:hover{
   width: 100%;
   border-bottom: 12px solid #bd5758;
 }
+
+.contact img{
+  transition: 0.2s;
+}
+.contact img:hover {
+  box-shadow: 0px 5px 15px rgba(0,0,0,.45)!important;
+  transition-timing-function: ease-in-out;
+}
 @include small-breakpoint{
 .underline:after{
   top: 90px;
@@ -312,6 +352,9 @@ footer a:hover{
 @include small-breakpoint{
   .contact{
     justify-content: flex-end;
+  }
+  .footer{
+    justify-content: space-between;
   }
   .logo > img:first-child{
     display: none;
