@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+
+<header>
+  <div class="medium-container">
+    <nav class="flex-row top-bar">
+    	<section class="flex-column flex-small text-center logo">
+        <img src="https://image.ibb.co/bxhdoQ/logo_secondary.png" alt="">
+        <img src="https://image.ibb.co/hsbnv5/logo.png" alt="">
+      </section>
+    	<section class="flex-column">
+        <ul class="flex-row contact">
+          <li><img src="https://image.ibb.co/gDUkhk/fb_icon.png" alt=""></li>
+          <li>CALL (724) 787.9726</li>
+        </ul>
+      </section>
+    </nav>
+  </div> <!-- topbar -->
+
+  <div class="flex-row vertical-center hero">
+   <h3>WE <span class="underline">SPECIALIZE</span> IN WELDING, FABRICATION &amp; RESTORATION.</h3>
+  </div>
+</header>
+
+
+<main>
+  <div class="medium-container">
+    <section class="flex-row service-title">
+      <h1>Services</h1> <img src="https://image.ibb.co/m5ifv5/apron_logo.png" alt="">
+    </section>
+    <div class="flex-row text-center services-3">
+      <section class="flex-column flex-small divider">
+        <h4>We Develop Strategies</h4>
+        <p>We develop strategies for single unit projects, production runs, or machinery repairsfor commercial or residential applications.</p>
+      </section>
+      <section class="flex-column flex-small divider">
+        <h4>Serve Many Industries</h4>
+        <p>Serves many industries as a job shop for the fabrication, redesign, and repair of machinery and components.</p>
+      </section>
+      <section class="flex-column flex-small divider">
+        <h4>Full Service</h4>
+        <p>A full service fabrication and weld shop with
+basic machining.</p>
+      </section>
+    </div>
+    <div class="flex-row text-center services-2">
+      <section class="flex-column divider">
+        <h4>Special Needs</h4>
+        <p>We provide field services for your specific needs.</p>
+      </section>
+      <section class="flex-column flex-small divider">
+        <h4>Specialty Metals</h4>
+        <p class="no-margin-bottom">Work with many metals including Sheet metal, Carbon steel, Stainless, Aluminum, and other specialty metals.</p>
+      </section>
+    </div>
+  </div>
+</main>
+
+
+<div class="hero-2">
+  <div class="medium-container">
+  <section class="flex-row estimate">
+    <h2 class="no-margin-top">Need An <br> <span class="underline">Estimate?</span></h2>
+    <form>
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="text" id="name" placeholder="Phone">
+      <input type="text" id="name" placeholder="Email">
+      <textarea id="comments" placeholder="Project Description" ></textarea>
+      <label>
+      <input type="submit" value="Attachment">
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+  </div>
+</div>
+
+<article>
+  <div class="medium-container">
+    <div class="flex-row about-us">
+      <section class="flex-column text-center flex-small">
+        <h1 class="no-margin-top">About Us</h1>
+        <h4>A full service fabrication &amp; weld shop <br>
+  with basic machining.</h4>
+      </section>
+      <section>
+        <img class="logo" src="https://image.ibb.co/c99nF5/helmet_logo.png" alt="">
+      </section>
+    </div>
+    <section class="flex-row video">
+      <iframe width="100%" height="515" src="https://www.youtube.com/embed/AOeY63s1lPI" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <div class="flex-row text-center contact">
+      <section class="flex-column divider">
+        <h4>Location</h4>
+        <p>3751 State Route 136
+  Greensburg, Pennsylvania</p>
+      </section>
+      <section class="flex-column flex-small divider">
+        <h4>Call Us</h4>
+        <p>(724) 787-9726</p>
+      </section>
+    </div>
+  </div>
+</article>
+
+
+
+
+<div class="map">
+    <section id="map"></section>
+</div>
+
+<footer class="text-center">
+  <div class="medium-container">
+    <div class="flex-row footer">
+      <small class="copy-owner">©2017 NCD SPECIALTIES. ALL RIGHTS RESERVED.</small>
+      <small class="copy-creator">Made With <i class="fa fa-heart" aria-hidden="true"></i> <a href="http://chrisbrennanpgh.com/" target="_blank">chrisbrennanpgh.com</a></small>
+    </footer>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function initMap() {
+    // Map options
+    var options = {
+      zoom: 14,
+      center: { lat: 40.296687, lng: -79.5572 },
+      styles: [
+        {
+          featureType: "all",
+          elementType: "labels.text.fill",
+          stylers: [
+            {
+              color: "#8a7fa6"
+            },
+            {
+              gamma: "1.10"
+            }
+          ]
+        },
+        {
+          featureType: "all",
+          elementType: "labels.text.stroke",
+          stylers: [
+            {
+              visibility: "on"
+            },
+            {
+              color: "#444f67"
+            },
+            {
+              weight: "4.00"
+            },
+            {
+              gamma: "0.85"
+            }
+          ]
+        },
+        {
+          featureType: "all",
+          elementType: "labels.icon",
+          stylers: [
+            {
+              visibility: "on"
+            },
+            {
+              weight: "1.00"
+            },
+            {
+              saturation: "-56"
+            },
+            {
+              lightness: "0"
+            },
+            {
+              gamma: "1.00"
+            },
+            {
+              hue: "#ff009b"
+            }
+          ]
+        },
+        {
+          featureType: "administrative",
+          elementType: "geometry",
+          stylers: [
+            {
+              weight: 0.6
+            },
+            {
+              color: "#a06d8c"
+            }
+          ]
+        },
+        {
+          featureType: "landscape",
+          elementType: "geometry",
+          stylers: [
+            {
+              color: "#444f67"
+            }
+          ]
+        },
+        {
+          featureType: "poi",
+          elementType: "geometry",
+          stylers: [
+            {
+              visibility: "on"
+            },
+            {
+              color: "#444f67"
+            }
+          ]
+        },
+        {
+          featureType: "poi",
+          elementType: "labels.icon",
+          stylers: [
+            {
+              visibility: "off"
+            }
+          ]
+        },
+        {
+          featureType: "poi.park",
+          elementType: "geometry",
+          stylers: [
+            {
+              color: "#3a3c3c"
+            },
+            {
+              gamma: "1.00"
+            }
+          ]
+        },
+        {
+          featureType: "poi.park",
+          elementType: "labels",
+          stylers: [
+            {
+              visibility: "on"
+            }
+          ]
+        },
+        {
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
+            {
+              color: "#444f67"
+            },
+            {
+              gamma: "0.85"
+            }
+          ]
+        },
+        {
+          featureType: "road",
+          elementType: "geometry.stroke",
+          stylers: [
+            {
+              visibility: "on"
+            },
+            {
+              color: "#444f67"
+            },
+            {
+              gamma: "1.15"
+            }
+          ]
+        },
+        {
+          featureType: "road",
+          elementType: "labels.icon",
+          stylers: [
+            {
+              invert_lightness: true
+            }
+          ]
+        },
+        {
+          featureType: "road.highway",
+          elementType: "geometry.fill",
+          stylers: [
+            {
+              color: "#bd5758"
+            },
+            {
+              gamma: "1.00"
+            }
+          ]
+        },
+        {
+          featureType: "road.arterial",
+          elementType: "geometry.fill",
+          stylers: [
+            {
+              color: "#bd5758"
+            }
+          ]
+        },
+        {
+          featureType: "transit",
+          elementType: "geometry",
+          stylers: [
+            {
+              color: "#a06d8c"
+            }
+          ]
+        },
+        {
+          featureType: "water",
+          elementType: "geometry",
+          stylers: [
+            {
+              color: "#444f67"
+            },
+            {
+              gamma: "0.80"
+            }
+          ]
+        }
+      ]
+    };
+
+    // New map
+    var map = new google.maps.Map(document.getElementById("map"), options);
+
+    // Listen for click on map
+    google.maps.event.addListener(map, "click", function(event) {
+      // Add marker
+      addMarker({ coords: event.latLng });
+    });
+
+    /*
+            // Add marker
+            var marker = new google.maps.Marker({
+              position:{lat:42.4668,lng:-70.9495},
+              map:map,
+              icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+            });
+
+            var infoWindow = new google.maps.InfoWindow({
+              content:'<h1>Lynn MA</h1>'
+            });
+
+            marker.addListener('click', function(){
+              infoWindow.open(map, marker);
+            });
+            */
+
+    // Array of markers
+    var markers = [
+      {
+        coords: { lat: 40.296687, lng: -79.5572 },
+        iconImage: "https://image.ibb.co/dqVy55/marker.png",
+        content: "<h1>136 Greensburg, PA</h1>"
+      },
+      {
+        coords: { lat: 42.8584, lng: -70.93 },
+        content: "<h1>Amesbury MA</h1>"
+      },
+      {
+        coords: { lat: 42.7762, lng: -71.0773 }
+      }
+    ];
+
+    // Loop through markers
+    for (var i = 0; i < markers.length; i++) {
+      // Add marker
+      addMarker(markers[i]);
+    }
+
+    // Add Marker Function
+    function addMarker(props) {
+      var marker = new google.maps.Marker({
+        position: props.coords,
+        map: map
+        //icon:props.iconImage
+      });
+
+      // Check for customicon
+      if (props.iconImage) {
+        // Set icon image
+        marker.setIcon(props.iconImage);
+      }
+
+      // Check content
+      if (props.content) {
+        var infoWindow = new google.maps.InfoWindow({
+          content: props.content
+        });
+
+        marker.addListener("click", function() {
+          infoWindow.open(map, marker);
+        });
+      }
+    }
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBnVzx70a987PWll1SUYJggU_gUWd7hpY&callback=initMap">
+</script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "primitive",
+  "version": "1.1.0",
+  "description": "A Sass starter-pack for front-end web developers.",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taniarascia/primitive.git"
+  },
+  "keywords": [
+    "sass",
+    "setup",
+    "boilerplate",
+    "framework",
+    "ui"
+  ],
+  "author": "Tania Rascia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taniarascia/primitive/issues"
+  },
+  "homepage": "https://taniarascia.github.io/primitive",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

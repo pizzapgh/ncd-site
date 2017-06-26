@@ -1,0 +1,428 @@
+/*! Primitive
+  by Tania Rascia */
+
+// Configuration
+@import "base/variables";
+@import "base/mixins";
+
+// Reset
+@import "base/normalize";
+@import "base/reset";
+
+// Components
+@import "components/scaffolding";
+@import "components/grid";
+@import "components/helpers";
+@import "components/buttons";
+@import "components/forms";
+@import "components/tables";
+@import "components/navigation";
+@import "components/layout";
+
+.flex-row{
+  margin: 0;
+  margin: 0;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+li{
+font-family: $heading-font-family;
+color: $secondary-color;
+font-size: 1.2rem;
+}
+.service-title h1{
+  margin-top: 0;
+}
+h1{
+  font-size: 4.7rem;
+  color: $primary-color;
+  mask-image: url("../images/texture.png");
+}
+h2{
+  font-size: 3.5rem;
+  color: $accent-color;
+  z-index: 1;
+}
+h3{
+  font-size: 2rem;
+  color: $accent-color;
+  z-index: 1;
+}
+h4{
+  font-size: 1.5rem;
+  color: $secondary-color;
+}
+.about-us h4{
+  font-size: 1.2rem;
+  line-height: $line-height;
+  margin-top: 0;
+  margin-bottom:0;
+}
+.about-us h1{
+  margin-bottom: 0;
+}
+.contact p{
+  font-size: 1.2rem;
+}
+@include small-breakpoint {
+  h1{
+    font-size:6.5rem;
+  }
+  h2{
+    font-size: 6rem;
+  }
+  h3{
+    font-size: 3rem;
+  }
+  .about-us h4{
+    font-size: 1.6rem;
+  }
+}
+@include medium-breakpoint {
+  h1{
+    font-size:10rem;
+  }
+  h3{
+    font-size: 3rem;
+  }
+  .about-us h4{
+    font-size: 2.5rem;
+  }
+}
+@include large-breakpoint {
+  h1{
+    font-size:11.5rem;
+  }
+  h2{
+    font-size: 6.5rem;
+  }
+  h3{
+    font-size: 2.5rem;
+  }
+  .about-us h4{
+    font-size: 2.8rem;
+  }
+}
+
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.top-bar{
+  align-items: center;
+  justify-content: center;
+}
+.contact{
+  align-items: center;
+  justify-content: center;
+}
+.logo > img:last-child{
+  display: none;
+}
+.contact li{
+  margin-right: 1em;
+}
+.contact li:last-child{
+  margin-right: 0;
+}
+.hero{
+  background: url(https://image.ibb.co/hdKFF5/hero_lg.png);
+  background-size: cover;
+  background-position: center center;
+  height: 30vh;
+  width: 100%;
+}
+.service-title{
+  align-items: center;
+  justify-content: center;
+}
+.flex-column{
+  position: relative;
+}
+.divider:after{
+  content: "";
+  display: block;
+  width: 212px;
+  margin: auto;
+  border-bottom: 8px solid #555769;
+  mask-image: url("../images/texture.png");
+}
+.services-2 > .divider:last-child:after{
+  border-bottom: none;
+}
+.contact > .divider:last-child:after{
+  border-bottom: none;
+}
+.estimate{
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-2{
+  background: url(https://preview.ibb.co/g7oqXk/quote_bg_pic.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+input[type=text]{
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid white;
+}
+textarea{
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid white;
+  padding-bottom: 5em;
+}
+input[type=submit]{
+  display: block;
+  border-radius: 0;
+  width: 100%;
+  background: #bd5758;
+}
+input[type=submit]hover{
+  color: red;
+}
+input[type=submit]:first-child{
+  background: white;
+  color: #555769;;
+}
+form{
+  width: 100%;
+}
+.about-us{
+  align-items: center;
+  justify-content: center;
+}
+.video iframe {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.45);
+}
+#map {
+  height: 600px;
+  width: 100%;
+}
+#map h1 {
+  font-size: 2em;
+}
+#map span {
+  display: none;
+}
+#map a {
+  display: none;
+}
+.fa-heart {
+  color: #bd5758;
+}
+.copy-owner{
+  margin-right:1em;
+}
+::placeholder{
+  color: $accent-color;
+}
+input#name{
+  padding: .75rem .75rem .75rem 0em;
+}
+input::placeholder{
+  color: $accent-color;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+    font-weight: 400;
+}
+textarea::placeholder{
+  color: $accent-color;
+  font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+textarea#comments{
+  padding: .75rem .75rem 6rem 0em;
+  margin-bottom: 1.2rem;
+}
+input[type=submit]{
+  padding: 1.2rem 1.25rem;
+  margin: 0 0 .8rem;
+}
+.services-2 p{
+  padding:0 1em;
+}
+.services-3 p{
+    padding:0 1em;
+}
+footer{
+  color: $primary-color;
+  text-transform: uppercase;
+  padding: 1.5em 0;
+}
+footer a{
+  color: $primary-color;
+}
+footer a:hover{
+    text-decoration: none;
+}
+.footer{
+  justify-content: space-between;
+}
+.logo img:first-child{
+  width: 240px;
+}
+.underline {
+  position: relative;
+}
+.underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 47px;
+  z-index: -10000;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 12px solid #bd5758;
+}
+.underline:first-child:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 21px;
+  z-index: -10000;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 12px solid #bd5758;
+}
+@include small-breakpoint{
+.underline:after{
+  top: 90px;
+    border-bottom: 20px solid #bd5758;
+  }
+.underline:first-child:after{
+  top: 40px;
+    border-bottom: 12px solid #bd5758;
+  }
+}
+@include medium-breakpoint{
+.underline:first-child:after{
+  top: 33px;
+    border-bottom: 12px solid #bd5758;
+  }
+}
+@include small-breakpoint{
+  .contact{
+    justify-content: flex-end;
+  }
+  .logo > img:first-child{
+    display: none;
+  }
+  .logo > img:last-child{
+    display: block;
+  }
+  .service-title{
+    align-items: center;
+    justify-content: space-between;
+  }
+  .divider:after{
+    border-bottom: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 125px;
+    border-right: 8px solid #555769;
+  }
+  .divider:last-child:after{
+    border-right: none;
+  }
+  form{
+    width: 33%;
+  }
+  .about-us > .flex-column{
+    padding: 0;
+  }
+  .about-us > .text-center{
+    text-align: left !important;
+  }
+  .hero{
+  height: 50vh;
+  }
+}
+
+
+.top-bar{
+  padding: 1.5em 0;
+}
+main{
+  padding: 1.5em 0;
+}
+.hero{
+  padding: 0 1em;
+}
+.hero-2{
+    padding: 1.5em 0;
+}
+article{
+  padding: 1.5em 0;
+}
+.video{
+  padding: 1.5em 0;
+}
+@include small-breakpoint{
+  main{
+    padding: 3em 0;
+  }
+  .hero-2{
+      padding: 4em 0;
+  }
+  .video{
+    padding: 3em 0;
+  }
+  article{
+    padding: 3em 0;
+  }
+  .services-3{
+    margin-top: 3em;
+  }
+  .services-2{
+    margin:3em 3em;
+  }
+}
+
+/* padding
+-----------*/
+
+.contact img{
+  width: 50px;
+}
+.about-us img{
+  width: 150px;
+}
+.service-title img{
+  width: 150px;
+  }
+@include small-breakpoint{
+.service-title img{
+  width: 200px;
+  margin-bottom: 2em;
+  }
+  .about-us img{
+    width: 180px;
+  }
+}
+@include medium-breakpoint{
+.service-title img{
+  width: 230px;
+  }
+  .about-us img{
+    width: 210px;
+        margin-bottom: 4em;
+  }
+}
+@include large-breakpoint{
+.service-title img{
+  width: 250px;
+  }
+}
+
+/* images
+-----------*/
